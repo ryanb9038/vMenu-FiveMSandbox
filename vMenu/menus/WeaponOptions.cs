@@ -120,7 +120,7 @@ namespace vMenuClient
             {
                 addonWeaponsBtn.LeftIcon = MenuItem.Icon.LOCK;
                 addonWeaponsBtn.Enabled = false;
-                addonWeaponsBtn.Description = "This option is not available on this server because you don't have permission to use it, or it is not setup correctly.";
+                addonWeaponsBtn.Description = "~r~You must join the discord to access this weaopn. ~b~(discord.gg/fivemsandbox)";
             }
             #endregion
             addonWeaponsMenu.RefreshIndex();
