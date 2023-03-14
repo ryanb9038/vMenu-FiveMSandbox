@@ -71,7 +71,7 @@ namespace vMenuClient
 
                             if (!allowedCategories[cat])
                             {
-                                categoryBtn.Description = "This vehicle class is disabled by the server.";
+                                categoryBtn.Description = "~r~You must join the discord to access this category. ~b~(discord.gg/fivemsandbox)";
                                 categoryBtn.Enabled = false;
                                 categoryBtn.LeftIcon = MenuItem.Icon.LOCK;
                                 categoryBtn.Label = "";
@@ -150,7 +150,7 @@ namespace vMenuClient
             {
                 addonCarsBtn.Enabled = false;
                 addonCarsBtn.LeftIcon = MenuItem.Icon.LOCK;
-                addonCarsBtn.Description = "Access to this list has been restricted by the server owner.";
+                addonCarsBtn.Description = "~r~You must join the discord to access this category. ~b~(discord.gg/fivemsandbox)";
             }
             #endregion
 
