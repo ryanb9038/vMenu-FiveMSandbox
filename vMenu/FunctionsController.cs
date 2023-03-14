@@ -2156,7 +2156,7 @@ namespace vMenuClient
                                         blip = AddBlipForEntity(ped);
                                     }
                                     // only manage the blip for this player if the player is nearby
-                                    
+                                    if (p.Character.Position.DistanceToSquared2D(Game.PlayerPed.Position) < 99999999999999999999 || Game.IsPaused)
                                     {
                                         // (re)set the blip color in case something changed it.
                                         SetBlipColour(blip, 0);
