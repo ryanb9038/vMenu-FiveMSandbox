@@ -45,7 +45,7 @@ namespace vMenuClient
 
             #region addon cars menu
             // Vehicle Addons List
-            Menu addonCarsMenu = new Menu("Addon Vehicles", "Spawn An Addon Vehicle");
+            Menu addonCarsMenu = new Menu("~r~Addon Vehicles", "Spawn An Addon Vehicle");
             MenuItem addonCarsBtn = new MenuItem("~r~Addon Vehicles", "~g~A list of addon vehicles available on this server.") { Label = "→→→" };
 
             menu.AddMenuItem(addonCarsBtn);
