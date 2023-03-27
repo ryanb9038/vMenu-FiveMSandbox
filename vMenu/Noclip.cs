@@ -197,7 +197,7 @@ namespace vMenuClient
                 SetEveryoneIgnorePlayer(Game.PlayerPed.Handle, true);
                 SetPoliceIgnorePlayer(Game.PlayerPed.Handle, true);
                 
-                DisableControlAction(0, 24, true)
+                DisableControlAction(0, 24, true);
 
                 // After the next game tick, reset the entity properties.
                 await Delay(0);
@@ -217,7 +217,7 @@ namespace vMenuClient
 
                 SetEveryoneIgnorePlayer(Game.PlayerPed.Handle, false);
                 SetPoliceIgnorePlayer(Game.PlayerPed.Handle, false);
-                DisableControlAction(0, 24, false)
+                DisableControlAction(0, 24, false);
             }
 
             await Task.FromResult(0);
