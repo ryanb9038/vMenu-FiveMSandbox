@@ -192,7 +192,7 @@ namespace vMenuClient
 
                 SetEntityVisible(noclipEntity, true, true);
                 SetLocalPlayerVisibleLocally(true);
-                //SetEntityAlpha(noclipEntity, (int)(255 * 0.2), 0);
+                SetEntityAlpha(noclipEntity, (int)(255 * 0.2), 0);
 
                 SetEveryoneIgnorePlayer(Game.PlayerPed.Handle, true);
                 SetPoliceIgnorePlayer(Game.PlayerPed.Handle, true);
