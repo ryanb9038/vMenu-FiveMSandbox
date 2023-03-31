@@ -193,6 +193,7 @@ namespace vMenuClient
                 SetEntityVisible(noclipEntity, true, true);
                 SetLocalPlayerVisibleLocally(true);
                 SetEntityAlpha(noclipEntity, (int)(255 * 0.2), 0);
+                NetworkSetFriendlyFireOption(noclipEntity, false, false);
 
                 SetEveryoneIgnorePlayer(Game.PlayerPed.Handle, true);
                 SetPoliceIgnorePlayer(Game.PlayerPed.Handle, true);
@@ -202,6 +203,7 @@ namespace vMenuClient
                 FreezeEntityPosition(noclipEntity, false);
                 SetEntityInvincible(noclipEntity, false);
                 SetEntityCollision(noclipEntity, true, true);
+                NetworkSetFriendlyFireOption(noclipEntity, true, true);
 
                 // If the player is not set as invisible by PlayerOptions or if the noclip entity is not the player ped, reset the visibility
                 if (MainMenu.PlayerOptionsMenu == null || (!MainMenu.PlayerOptionsMenu.PlayerInvisible || (MainMenu.PlayerOptionsMenu.PlayerInvisible && noclipEntity == Game.PlayerPed.Handle)))
