@@ -27,7 +27,7 @@ namespace vMenuClient
             "Max Speed"
         };
 
-        public NoClip()
+        public NoClip() 
         {
             Tick += NoClipHandler;
         }
