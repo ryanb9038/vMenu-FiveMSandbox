@@ -1203,7 +1203,7 @@ namespace vMenuClient
             int modelClass = GetVehicleClassFromName(vehicleHash);
             if (!VehicleSpawner.allowedCategories[modelClass])
             {
-                Notify.Alert("You are not allowed to spawn this vehicle, because it belongs to a category which is restricted by the server owner.");
+                Notify.Alert("This vehicle is restricted! To access all vehicles, join the discord. discord.gg/fivemsandbox");
                 return 0;
             }
 
