@@ -56,6 +56,7 @@ namespace vMenuClient
             }
             while (NoclipActive)
             {
+                SetCurrentPedWeapon(Game.PlayerPed.Handle, (uint)GetHashKey("WEAPON_UNARMED"), true);
                 if (!IsHudHidden())
                 {
                     BeginScaleformMovieMethod(Scale, "CLEAR_ALL");
