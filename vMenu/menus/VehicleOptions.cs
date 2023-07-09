@@ -45,7 +45,7 @@ namespace vMenuClient
         public bool FlashHighbeamsOnHonk { get; private set; } = UserDefaults.VehicleHighbeamsOnHonk;
         public bool DisablePlaneTurbulence { get; private set; } = UserDefaults.VehicleDisablePlaneTurbulence;
         public bool VehicleBikeSeatbelt { get; private set; } = UserDefaults.VehicleBikeSeatbelt;
-        public bool VehicleInfiniteFuel { get; private set; } = false;
+        public bool VehicleInfiniteFuel { get; private set; } = true;
         public bool VehicleShowHealth { get; private set; } = false;
         public bool VehicleFrozen { get; private set; } = false;
         public bool VehicleTorqueMultiplier { get; private set; } = false;
